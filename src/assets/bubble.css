@@ -1,0 +1,15 @@
+@keyframes float {
+  0% {
+    transform: translate(0, 100vh) rotate(0deg);
+  }
+  50% {
+    transform: translate(30px, 30vh) rotate(120deg);
+  }
+  100% {
+    transform: translate(0, -20vh) rotate(240deg);
+  }
+}
+
+.bubble-animation {
+  animation: float 30s ease-in-out infinite;
+}
