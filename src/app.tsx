@@ -1,12 +1,12 @@
+import AdminLayout from '@/layouts/admin-layout';
+import RootLayout from '@/layouts/root-layout';
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router';
-import RootLayout from '@/layouts/root-layout';
-import AdminLayout from '@/layouts/admin-layout';
-import Home from '@/pages/home';
-import Login from '@/pages/login';
-import Admin from '@/pages/admin';
 const NotFound = React.lazy(() => import('@/pages/not-found'));
 const SignIn = React.lazy(() => import('@/pages/sign-in'));
+const Login = React.lazy(() => import('@/pages/login'));
+const Admin = React.lazy(() => import('@/pages/admin'));
+const Home = React.lazy(() => import('@/pages/home'));
 const router = createBrowserRouter([
   {
     path: '/',

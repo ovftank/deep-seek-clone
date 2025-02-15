@@ -19,7 +19,7 @@ export const models: ModelInfo[] = [
   { name: 'Qwen2.5', version: '72B-Inst' },
   { name: 'Llama3.1', version: '405B-Inst' },
   { name: 'Claude-3.5', version: 'Sonnet-1022' },
-  { name: 'GPT-4', version: '0513' }
+  { name: 'GPT-4', version: '0513' },
 ];
 
 export const architectureRows: MetricRow[] = [
@@ -31,8 +31,8 @@ export const architectureRows: MetricRow[] = [
       { value: 'Dense' },
       { value: 'Dense' },
       { value: '-' },
-      { value: '-' }
-    ]
+      { value: '-' },
+    ],
   },
   {
     metric: '# Activated Params',
@@ -42,8 +42,8 @@ export const architectureRows: MetricRow[] = [
       { value: '72B' },
       { value: '405B' },
       { value: '-' },
-      { value: '-' }
-    ]
+      { value: '-' },
+    ],
   },
   {
     metric: '# Total Params',
@@ -53,9 +53,9 @@ export const architectureRows: MetricRow[] = [
       { value: '72B' },
       { value: '405B' },
       { value: '-' },
-      { value: '-' }
-    ]
-  }
+      { value: '-' },
+    ],
+  },
 ];
 
 export const metricRows: MetricRow[] = [
@@ -68,8 +68,8 @@ export const metricRows: MetricRow[] = [
       { value: '85.3' },
       { value: '88.6', isBold: true },
       { value: '88.3' },
-      { value: '87.2' }
-    ]
+      { value: '87.2' },
+    ],
   },
   {
     category: 'English',
@@ -80,8 +80,8 @@ export const metricRows: MetricRow[] = [
       { value: '85.6' },
       { value: '86.2' },
       { value: '88.9' },
-      { value: '88.0' }
-    ]
+      { value: '88.0' },
+    ],
   },
   {
     category: 'English',
@@ -92,8 +92,8 @@ export const metricRows: MetricRow[] = [
       { value: '71.6' },
       { value: '73.3' },
       { value: '78.0', isBold: true },
-      { value: '72.6' }
-    ]
+      { value: '72.6' },
+    ],
   },
   {
     category: 'English',
@@ -104,8 +104,8 @@ export const metricRows: MetricRow[] = [
       { value: '59.7' },
       { value: '61.2', isBold: true },
       { value: '60.8' },
-      { value: '59.9' }
-    ]
+      { value: '59.9' },
+    ],
   },
   {
     category: 'English',
@@ -116,8 +116,8 @@ export const metricRows: MetricRow[] = [
       { value: '72.8' },
       { value: '74.9', isBold: true },
       { value: '74.1' },
-      { value: '73.6' }
-    ]
+      { value: '73.6' },
+    ],
   },
   {
     category: 'English',
@@ -128,8 +128,8 @@ export const metricRows: MetricRow[] = [
       { value: '81.5' },
       { value: '83.9', isBold: true },
       { value: '83.2' },
-      { value: '82.7' }
-    ]
+      { value: '82.7' },
+    ],
   },
   {
     category: 'Code',
@@ -140,8 +140,8 @@ export const metricRows: MetricRow[] = [
       { value: '77.3' },
       { value: '77.2', isBold: true },
       { value: '81.7' },
-      { value: '80.5' }
-    ]
+      { value: '80.5' },
+    ],
   },
   {
     category: 'Code',
@@ -152,8 +152,8 @@ export const metricRows: MetricRow[] = [
       { value: '62.9' },
       { value: '64.7', isBold: true },
       { value: '64.1' },
-      { value: '63.5' }
-    ]
+      { value: '63.5' },
+    ],
   },
   {
     category: 'Code',
@@ -164,8 +164,8 @@ export const metricRows: MetricRow[] = [
       { value: '68.9' },
       { value: '70.5', isBold: true },
       { value: '69.8' },
-      { value: '69.2' }
-    ]
+      { value: '69.2' },
+    ],
   },
   {
     category: 'Math',
@@ -176,8 +176,8 @@ export const metricRows: MetricRow[] = [
       { value: '23.3' },
       { value: '23.3', isBold: true },
       { value: '16.0' },
-      { value: '9.3' }
-    ]
+      { value: '9.3' },
+    ],
   },
   {
     category: 'Math',
@@ -188,8 +188,8 @@ export const metricRows: MetricRow[] = [
       { value: '75.8' },
       { value: '77.6', isBold: true },
       { value: '77.0' },
-      { value: '76.4' }
-    ]
+      { value: '76.4' },
+    ],
   },
   {
     category: 'Math',
@@ -200,8 +200,8 @@ export const metricRows: MetricRow[] = [
       { value: '42.5' },
       { value: '44.3', isBold: true },
       { value: '43.7' },
-      { value: '43.1' }
-    ]
+      { value: '43.1' },
+    ],
   },
   {
     category: 'Chinese',
@@ -212,8 +212,8 @@ export const metricRows: MetricRow[] = [
       { value: '91.4' },
       { value: '84.7', isBold: true },
       { value: '85.4' },
-      { value: '87.9' }
-    ]
+      { value: '87.9' },
+    ],
   },
   {
     category: 'Chinese',
@@ -224,8 +224,8 @@ export const metricRows: MetricRow[] = [
       { value: '79.0' },
       { value: '81.3', isBold: true },
       { value: '80.6' },
-      { value: '80.0' }
-    ]
+      { value: '80.0' },
+    ],
   },
   {
     category: 'Chinese',
@@ -236,8 +236,8 @@ export const metricRows: MetricRow[] = [
       { value: '80.3' },
       { value: '82.6', isBold: true },
       { value: '81.9' },
-      { value: '81.3' }
-    ]
+      { value: '81.3' },
+    ],
   },
   {
     category: 'Chinese',
@@ -248,7 +248,7 @@ export const metricRows: MetricRow[] = [
       { value: '48.4' },
       { value: '50.4' },
       { value: '51.3' },
-      { value: '59.3' }
-    ]
-  }
+      { value: '59.3' },
+    ],
+  },
 ];
