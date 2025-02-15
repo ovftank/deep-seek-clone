@@ -48,4 +48,8 @@
   img {
     @apply pointer-events-none select-none;
   }
+  @font-face {
+    font-family: 'Optimistic Display';
+    src: url('/fonts/OptimisticDisplay-Regular.woff2') format('woff2');
+  }
 }

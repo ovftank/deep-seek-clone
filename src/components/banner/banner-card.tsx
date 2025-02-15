@@ -30,13 +30,7 @@ const BannerCard: React.FC<BannerCardProps> = ({ title, description, href }) => 
 
   if (href) {
     return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`${commonClasses} cursor-pointer`}
-        style={commonStyle}
-      >
+      <a href={href} className={`${commonClasses} cursor-pointer`} style={commonStyle}>
         {cardContent}
       </a>
     );

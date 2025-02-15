@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Optimistic Text Normal';
+  src: url('https://z-m-static.xx.fbcdn.net/rsrc.php/y2/r/6YirsaXqsap.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Optimistic Text Bold';
+  src: url('https://z-m-static.xx.fbcdn.net/rsrc.php/ye/r/ndhgOwkNmDs.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Optimistic Text Normal', sans-serif;
+}
+
+* {
+  font-family: inherit;
+}

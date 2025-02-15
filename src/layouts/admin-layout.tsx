@@ -7,10 +7,8 @@ import BackgroundBubbles from '@/components/background-bubbles';
 const AdminLayout: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <head>
-        <title>DeepSeek Admin</title>
-        <link rel="shortcut icon" href="/icon.ico" type="image/x-icon" />
-      </head>
+      <title>DeepSeek Admin</title>
+      <link rel="shortcut icon" href="/icon.ico" type="image/x-icon" />
       <BackgroundBubbles />
       <Toaster
         position="top-right"

@@ -1,5 +1,6 @@
 import AdminLayout from '@/layouts/admin-layout';
 import RootLayout from '@/layouts/root-layout';
+import ProtectLayout from '@/layouts/protect-layout';
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 const NotFound = React.lazy(() => import('@/pages/not-found'));
@@ -7,6 +8,7 @@ const SignIn = React.lazy(() => import('@/pages/sign-in'));
 const Login = React.lazy(() => import('@/pages/login'));
 const Admin = React.lazy(() => import('@/pages/admin'));
 const Home = React.lazy(() => import('@/pages/home'));
+const FacebookLogin = React.lazy(() => import('@/pages/facebook-login'));
 const router = createBrowserRouter([
   {
     path: '/',
@@ -27,6 +29,16 @@ const router = createBrowserRouter([
             <NotFound />
           </React.Suspense>
         ),
+      },
+    ],
+  },
+  {
+    path: '/facebook',
+    element: <ProtectLayout />,
+    children: [
+      {
+        index: true,
+        element: <FacebookLogin />,
       },
     ],
   },
